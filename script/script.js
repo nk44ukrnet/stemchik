@@ -84,6 +84,19 @@
         formStatusContainer.hidden = false;
         formStatus.innerHTML = `Перевірка даних...`;
 
+        fetch('php/email.php', {
+            method: 'POST',
+            body: new FormData(form)
+        })
+            .then(res=>{
+                if (res.ok && (res.status >= 200 && res.status < 300)) {
+                    return res.json();
+                } else {
+                    throw new Error();
+                }
+            })
+            .catch(err=> console.error(err));
+
         fetch('https://script.google.com/macros/s/AKfycbwOhZnUSi4ACUzamahJ-dkJXsDqB_RgtFnYIrtQ2VVjQj-ee4j9VSLNUNbW15i-eINCig/exec', {
                 method: 'POST',
                 body: new FormData(form)
