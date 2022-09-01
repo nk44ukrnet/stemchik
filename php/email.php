@@ -11,7 +11,7 @@ if(isset($_POST['fullname'])
     $headers[] = 'MIME-Version: 1.0';
     $headers[] = 'Content-type: text/html; charset=utf-8';
     $headers[] = 'From: Stemchyk <noreply@stemchik.com>';
-    $to = 'tsvynakhidnyk@gmail.com, v.kovtun@ies.org.ua'; //'i.artemchuk@ies.org.ua, y.semivolos@ies.org.ua';  //tsvynakhidnyk@gmail.com, v.kovtun@ies.org.ua
+    $to = 'i.artemchuk@ies.org.ua, y.semivolos@ies.org.ua'; //'i.artemchuk@ies.org.ua, y.semivolos@ies.org.ua';  //tsvynakhidnyk@gmail.com, v.kovtun@ies.org.ua
 
     $body = "
 		<b>Ім'я: </b> $fullName <br>
