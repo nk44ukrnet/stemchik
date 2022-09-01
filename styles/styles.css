@@ -1478,6 +1478,17 @@ a:hover {
   opacity: 0.9;
   color: #fff;
 }
+.footer__social {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 40px;
+  padding-top: 30px;
+  color: var(--yellow);
+  text-decoration: none;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
 @media (max-width: 1147px) {
   .footer {
     font-size: 18px;
